@@ -1,0 +1,6 @@
+yt-dlp
+colorama
+pyfiglet
+termcolor
+fake-useragent
+

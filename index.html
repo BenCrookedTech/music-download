@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Music Download Tool</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>🎶 Music Download</h1>
+  <p>Here is a glimpse of the Music Download Tool in action.</p>
+  <img src="assets/tool.png" alt="Tool Screenshot" style="max-width:100%; border-radius:10px; margin-top: 1em;">
+</header>
+
+<nav>
+  <strong>📘 Table of Contents</strong><br>
+  <a href="#install">Installation</a><br>
+  <a href="#usage">Usage</a><br>
+  <a href="#structure">Project Structure</a><br>
+  <a href="#credits">Credits</a>
+</nav>
+
+<main>
+
+  <section id="install">
+    <h2>⚙️ Installation</h2>
+
+    <h3>💻 Windows Installation</h3>
+    <ol>
+      <li>Create a virtual environment:
+        <pre><code>python -m venv venv</code></pre>
+      </li>
+      <li>Activate it:
+        <pre><code>venv\Scripts\activate</code></pre>
+      </li>
+      <li>Install dependencies:
+        <pre><code>pip install yt-dlp colorama</code></pre>
+      </li>
+    </ol>
+
+    <h3>🐧 Linux Installation</h3>
+    <ol>
+      <li>Create a virtual environment:
+        <pre><code>python3 -m venv venv</code></pre>
+      </li>
+      <li>Activate it:
+        <pre><code>source venv/bin/activate</code></pre>
+      </li>
+      <li>Install dependencies:
+        <pre><code>pip install yt-dlp colorama</code></pre>
+      </li>
+    </ol>
+
+    <h3>📱 Termux Installation</h3>
+    <ol>
+      <li>Enable storage:
+        <pre><code>termux-setup-storage</code></pre>
+      </li>
+      <li>Create and activate a virtual environment:
+        <pre><code>python -m venv venv
+source venv/bin/activate</code></pre>
+      </li>
+      <li>Install dependencies:
+        <pre><code>pip install yt-dlp colorama</code></pre>
+      </li>
+    </ol>
+
+    <!-- Manual installation toggle -->
+    <button onclick="toggleManual()" style="margin-top: 1em;">📦 Show Manual Installation</button>
+
+    <div id="manualInstall" style="display: none; margin-top: 1em;">
+      <h4>🧰 Manual Git Installation</h4>
+      <pre><code>
+# Clone the repository
+git clone https://github.com/BenCrookedTech/music-download.git
+cd music-download
+
+# Set up virtual environment
+python -m venv venv
+source venv/bin/activate
+
+# Install dependencies
+pip install -r requirements.txt
+      </code></pre>
+    </div>
+  </section>
+
+  <section id="usage">
+    <h2>🚀 Usage</h2>
+    <ol>
+      <li>Run the app:
+        <pre><code>python main.py</code></pre>
+      </li>
+      <li>Choose:
+        <ul>
+          <li>1 - Search & download</li>
+          <li>2 - Exit</li>
+        </ul>
+      </li>
+      <li>Enter a song/artist, then pick the result number.</li>
+    </ol>
+
+    <h3>🎯 Output Example:</h3>
+    <pre><code>
+🎵 Main Menu:
+[1] Enter song name or artist
+[2] Exit
+
+🎧 Enter artist or song name: j cole
+1. J. Cole - No Role Models
+2. J. Cole - Fire Squad
+...
+✅ Download complete.
+    </code></pre>
+  </section>
+
+  <section id="structure">
+    <h2>📁 Project Structure</h2>
+    <pre><code>
+music-download/
+├── index.html          # One-page documentation
+├── banner.py           # Banner art + styling
+├── paths.py            # Detects Downloads folder
+├── downloader.py       # Main logic
+├── assets/
+│   └── tool.png        # Screenshot
+├── style.css           # CSS styling
+└── requirements.txt    #required dependencies
+
+    </code></pre>
+  </section>
+
+  <section id="credits">
+    <h2>🙌 Credits</h2>
+    <p>Developed by <strong>BenCrookedTech</strong> using:</p>
+    <ul>
+      <li><code>yt-dlp</code> – for media downloading</li>
+      <li><code>colorama</code> – for colored prompts</li>
+      <li><code>Python 3</code> – cross-platform scripting</li>
+    </ul>
+    <p>Join my <a href="https://t.me/de3athas" target="_blank">Telegram Channel</a></p>
+    <p>📜 <em>For educational purposes only.</em></p>
+  </section>
+
+</main>
+
+<script>
+  function toggleManual() {
+    const manual = document.getElementById('manualInstall');
+    manual.style.display = manual.style.display === 'none' ? 'block' : 'none';
+  }
+</script>
+
+</body>
+</html>
