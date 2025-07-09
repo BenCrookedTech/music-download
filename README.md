@@ -109,4 +109,6 @@ music-download/
   * `Python 3` – scripting
 
 📎 [Join my Telegram Channel](https://t.me/de3athas)
+
+*OPEN SOURCE IS MY STYLE*
 📜 *For educational purposes only.*
