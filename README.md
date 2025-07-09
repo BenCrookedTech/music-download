@@ -59,7 +59,7 @@ pip install -r requirements.txt
 1. Run the app:
 
    ```bash
-   python main.py
+   python downloader.py
    ```
 
 2. Choose an option:
