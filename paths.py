@@ -10,6 +10,6 @@ def get_downloads_folder():
     if system == "Windows":
         return os.path.join(os.environ["USERPROFILE"], "Downloads")
     elif system in ["Linux", "Darwin"]:
-        return os.path.join(os.environ["HOME"], "Downloads")
+        return os.path.join(os.environ["HOME"], "Music")
     else:
         return os.getcwd()
